@@ -1,0 +1,136 @@
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 30% 20%, #f4efe6 0%, #ffffff 60%);
+}
+
+.hero-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-scene canvas {
+  display: block;
+}
+
+.hero__glow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(ellipse 620px 420px at center, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 75%);
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.hero__eyebrow {
+  background: rgba(190, 209, 115, 0.4);
+  font-size: 0.95rem;
+  padding: 8px 20px;
+}
+
+.hero h1 {
+  font-size: clamp(3.4rem, 9vw, 6.5rem);
+  font-weight: 400;
+  color: var(--color-secondary);
+}
+
+.hero h1 span {
+  color: var(--color-primary);
+}
+
+.hero p {
+  font-size: 1.4rem;
+  max-width: 580px;
+  margin: 24px auto 40px;
+}
+
+.hero__cta {
+  padding: 21px 46px;
+  font-size: 1.1rem;
+}
+
+.intro img {
+  box-shadow: 0 40px 70px -40px rgba(51, 49, 51, 0.4);
+}
+
+.intro h2 {
+  font-size: clamp(1.9rem, 3.5vw, 2.6rem);
+}
+
+.locations__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.location-card {
+  background: var(--color-alternate);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.location-card img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
+
+.location-card__body {
+  padding: 32px;
+}
+
+.location-card__tagline {
+  display: block;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+}
+
+.why-invest__list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.why-invest__item {
+  padding: 22px 26px;
+  background: #fff;
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--color-accent);
+}
+
+.why-invest__item h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.why-invest__item p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .locations__grid {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+}

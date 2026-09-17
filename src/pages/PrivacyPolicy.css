@@ -1,0 +1,12 @@
+.privacy-policy h2 {
+  font-size: 1.3rem;
+  margin-top: 40px;
+}
+
+.privacy-policy > div:first-child h2 {
+  margin-top: 0;
+}
+
+.privacy-policy p {
+  font-size: 0.98rem;
+}
