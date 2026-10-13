@@ -1,5 +1,5 @@
 import PageHero from '../components/PageHero';
-import RevealOnScroll from '../components/RevealOnScroll';
+import IntroSplit from '../components/IntroSplit';
 import ItemGrid from '../components/ItemGrid';
 import BranchFinder from '../components/BranchFinder';
 import CTASection from '../components/CTASection';
@@ -29,22 +29,17 @@ export default function Injections() {
         </div>
       </section>
 
-      <section className="section section--alt">
-        <div className="container">
-          <RevealOnScroll className="section-head">
-            <h2>How It Works</h2>
-          </RevealOnScroll>
-          <RevealOnScroll className="item-grid" y={24}>
-            {steps.map((s, i) => (
-              <div className="item-card" key={s.title}>
-                <span className="eyebrow">Step {i + 1}</span>
-                <h3>{s.title}</h3>
-                <p>{s.text}</p>
-              </div>
-            ))}
-          </RevealOnScroll>
+      <IntroSplit image="/images/services/injections-clinic.jpg" alt="Nurse preparing a vitamin injection" title="How It Works" altBg reverse>
+        <div className="intro-split__steps">
+          {steps.map((s, i) => (
+            <div className="item-card" key={s.title}>
+              <span className="eyebrow">Step {i + 1}</span>
+              <h3>{s.title}</h3>
+              <p>{s.text}</p>
+            </div>
+          ))}
         </div>
-      </section>
+      </IntroSplit>
 
       <BranchFinder />
       <CTASection />

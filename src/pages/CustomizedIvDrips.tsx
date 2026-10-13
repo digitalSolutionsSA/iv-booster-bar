@@ -1,5 +1,6 @@
 import PageHero from '../components/PageHero';
 import RevealOnScroll from '../components/RevealOnScroll';
+import IntroSplit from '../components/IntroSplit';
 import BranchFinder from '../components/BranchFinder';
 import CTASection from '../components/CTASection';
 
@@ -18,23 +19,32 @@ export default function CustomizedIvDrips() {
         subtitle="No more, no less. At The IV Booster Bar & Medical Centre, we know that one size doesn't fit all – your drip is built for you."
       />
 
-      <section className="section">
-        <div className="container two-col">
-          <RevealOnScroll>
-            <img src="/images/services/customized.jpg" alt="Custom IV drip equipment" loading="lazy" decoding="async" />
-          </RevealOnScroll>
-          <RevealOnScroll>
+      <IntroSplit image="/images/services/customized-new.jpg" alt="Nurse holding a customised IV drip bag" eyebrow="Tailor-Made For You" title="Your body is unique. Your wellness routine should be too.">
+        <p>
+          At <strong>The IV Booster Bar &amp; Medical Centre</strong>, we know that generic solutions
+          don&rsquo;t deliver exceptional results. That&rsquo;s why we offer{' '}
+          <strong>Customised IV Drips</strong> – tailor-made vitamin and nutrient infusions
+          formulated specifically for your body, lifestyle, and recovery goals.
+        </p>
+        <p>
+          Whether you are looking to amplify your energy, radiant skin from within, or ironclad
+          immunity, we build a blend designed exclusively for you.
+        </p>
+      </IntroSplit>
+
+      <section className="section section--alt">
+        <div className="container">
+          <RevealOnScroll className="section-head">
             <h2>Our 1-2-3 Process</h2>
-            <div className="why-invest__list">
-              {steps.map((s, i) => (
-                <div className="why-invest__item" key={s.title}>
-                  <h3>
-                    {i + 1}. {s.title}
-                  </h3>
-                  <p>{s.text}</p>
-                </div>
-              ))}
-            </div>
+          </RevealOnScroll>
+          <RevealOnScroll className="item-grid" y={24}>
+            {steps.map((s, i) => (
+              <div className="item-card" key={s.title}>
+                <span className="eyebrow">Step {i + 1}</span>
+                <h3>{s.title}</h3>
+                <p>{s.text}</p>
+              </div>
+            ))}
           </RevealOnScroll>
         </div>
       </section>

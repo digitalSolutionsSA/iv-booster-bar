@@ -1,5 +1,6 @@
 import PageHero from '../components/PageHero';
 import RevealOnScroll from '../components/RevealOnScroll';
+import IntroSplit from '../components/IntroSplit';
 import BranchFinder from '../components/BranchFinder';
 import CTASection from '../components/CTASection';
 
@@ -15,7 +16,7 @@ export default function AboutUs() {
       <section className="section">
         <div className="container two-col">
           <RevealOnScroll>
-            <img src="/images/services/about-hero.jpg" alt="Close up of an IV drip" loading="lazy" decoding="async" />
+            <img src="/images/services/about-wall.jpg" alt="The IV Booster Bar feature wall with colourful vitamin drip artwork" loading="lazy" decoding="async" />
           </RevealOnScroll>
           <RevealOnScroll>
             <h2>Our Story</h2>
@@ -71,18 +72,42 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="section">
-        <div className="container">
-          <RevealOnScroll className="section-head">
-            <h2>Our Approach to Care</h2>
-            <p>
-              We believe wellness should be personal, accessible, and results-driven. Every
-              treatment at The IV Booster Bar is guided by medical expertise, tailored to your
-              goals, and delivered in a comfortable, welcoming environment.
-            </p>
-          </RevealOnScroll>
-        </div>
-      </section>
+      <IntroSplit
+        image="/images/paperless/nurse-tablet-2.jpg"
+        alt="Registered nurse recording a client's vitals on a tablet"
+        imagePosition="50% 15%"
+        title="Our Approach to Care"
+        reverse
+      >
+        <p>
+          We believe wellness should be personal, accessible, and results-driven. Every treatment
+          at The IV Booster Bar is guided by medical expertise, tailored to your goals, and
+          delivered in a comfortable, welcoming environment.
+        </p>
+        <p>
+          We&rsquo;re also proudly <strong>100% paperless</strong>. Every client is onboarded on
+          one of our tablets, and your nurse records your vitals and treatment digitally, right at
+          your chair.
+        </p>
+        <ul className="why-choose-list">
+          <li>
+            <span>
+              <strong>Fill in your details once</strong> – no repeat paperwork on future visits.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Your profile is saved securely</strong> – and reviewed by our healthcare
+              team.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Walk straight in next time</strong> – we simply pull up your profile.
+            </span>
+          </li>
+        </ul>
+      </IntroSplit>
 
       <BranchFinder />
       <CTASection />

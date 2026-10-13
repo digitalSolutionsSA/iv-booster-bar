@@ -1,5 +1,5 @@
 import PageHero from '../components/PageHero';
-import RevealOnScroll from '../components/RevealOnScroll';
+import IntroSplit from '../components/IntroSplit';
 import ItemGrid from '../components/ItemGrid';
 import BranchFinder from '../components/BranchFinder';
 import CTASection from '../components/CTASection';
@@ -14,33 +14,28 @@ export default function IvDrips() {
         subtitle="By delivering vitamins, minerals, antioxidants, and hydration directly into your bloodstream, IV drips skip the digestive process, allowing your body to absorb nutrients at nearly 100% efficiency."
       />
 
-      <section className="section">
-        <div className="container">
-          <RevealOnScroll className="section-head">
-            <h2>Why Choose IV Therapy?</h2>
-          </RevealOnScroll>
-          <RevealOnScroll className="why-choose-list" y={20} stagger={0.06} >
-            <li>
-              <span>
-                <strong>Fast absorption</strong> – Feel the effects sooner, thanks to direct
-                delivery into your bloodstream.
-              </span>
-            </li>
-            <li>
-              <span>
-                <strong>High potency</strong> – Higher nutrient levels than oral supplements can
-                provide.
-              </span>
-            </li>
-            <li>
-              <span>
-                <strong>Tailored to you</strong> – From targeted support to all-in-one solutions,
-                we have a drip for every need.
-              </span>
-            </li>
-          </RevealOnScroll>
-        </div>
-      </section>
+      <IntroSplit image="/images/services/iv-drips-clinic.jpg" alt="Nurse preparing an IV drip at The IV Booster Bar" title="Why Choose IV Therapy?">
+        <ul className="why-choose-list">
+          <li>
+            <span>
+              <strong>Fast absorption</strong> – Feel the effects sooner, thanks to direct
+              delivery into your bloodstream.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>High potency</strong> – Higher nutrient levels than oral supplements can
+              provide.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Tailored to you</strong> – From targeted support to all-in-one solutions,
+              we have a drip for every need.
+            </span>
+          </li>
+        </ul>
+      </IntroSplit>
 
       <section className="section section--alt">
         <div className="container">

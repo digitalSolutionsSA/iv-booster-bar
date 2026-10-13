@@ -15,14 +15,18 @@ export default function Gallery() {
 
       <section className="section">
         <div className="container">
-          <h2 className="gallery-section__title">Our Vaal Triangle Branch</h2>
-          <RevealOnScroll className="gallery-grid" y={20} stagger={0.05}>
-            {galleryPhotos.vaal.map((src) => (
-              <a href={src} target="_blank" rel="noreferrer" key={src}>
-                <img src={src} alt="Vaal Triangle branch" loading="lazy" decoding="async" />
-              </a>
-            ))}
-          </RevealOnScroll>
+          {galleryPhotos.vaal.length > 0 && (
+            <>
+              <h2 className="gallery-section__title">Our Vaal Triangle Branch</h2>
+              <RevealOnScroll className="gallery-grid" y={20} stagger={0.05}>
+                {galleryPhotos.vaal.map((src) => (
+                  <a href={src} target="_blank" rel="noreferrer" key={src}>
+                    <img src={src} alt="Vaal Triangle branch" loading="lazy" decoding="async" />
+                  </a>
+                ))}
+              </RevealOnScroll>
+            </>
+          )}
 
           <h2 className="gallery-section__title">Our Sandton Branch</h2>
           <RevealOnScroll className="gallery-grid" y={20} stagger={0.05}>

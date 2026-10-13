@@ -6,6 +6,7 @@ const goals = [
   'Injections',
   'Wellness Tests & Screening',
   'Corporate Wellness',
+  'Concierge Services',
 ];
 
 export default function BookingForm() {

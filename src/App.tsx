@@ -15,6 +15,7 @@ const CustomizedIvDrips = lazy(() => import('./pages/CustomizedIvDrips'));
 const WeightManagement = lazy(() => import('./pages/WeightManagement'));
 const WellnessTestsScreening = lazy(() => import('./pages/WellnessTestsScreening'));
 const CorporateWellness = lazy(() => import('./pages/CorporateWellness'));
+const ConciergeServices = lazy(() => import('./pages/ConciergeServices'));
 const Gallery = lazy(() => import('./pages/Gallery'));
 const BookConsultation = lazy(() => import('./pages/BookConsultation'));
 const ContactUs = lazy(() => import('./pages/ContactUs'));
@@ -50,6 +51,7 @@ export default function App() {
             <Route path="/weight-management" element={<WeightManagement />} />
             <Route path="/wellness-tests-screening" element={<WellnessTestsScreening />} />
             <Route path="/corporate-wellness" element={<CorporateWellness />} />
+            <Route path="/concierge-medical-services" element={<ConciergeServices />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/book-a-consultation" element={<BookConsultation />} />
             <Route path="/contacts-us" element={<ContactUs />} />

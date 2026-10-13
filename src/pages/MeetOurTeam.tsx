@@ -9,7 +9,7 @@ export default function MeetOurTeam() {
       <PageHero
         eyebrow="About Us"
         title="Meet the IV Booster Bar Team"
-        subtitle="At The IV Booster Bar & Medical Centre, our medically qualified team combines clinical expertise with a friendly, client-first approach."
+        subtitle="At The IV Booster Bar & Medical Centre, our medically qualified team combines clinical expertise with a friendly, client-first approach. Meet the IV Booster Bar team who design and deliver personalised IV drips, injections and wellness plans – safely, professionally, and with your goals in mind."
       />
 
       <section className="section">

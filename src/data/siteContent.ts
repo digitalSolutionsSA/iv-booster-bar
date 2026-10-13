@@ -14,6 +14,7 @@ export const nav = [
   { label: 'Wellness Tests & Screening', to: '/wellness-tests-screening' },
   { label: 'Customized IV Drips', to: '/customized-iv-drips' },
   { label: 'Corporate Wellness', to: '/corporate-wellness' },
+  { label: 'Concierge', to: '/concierge-medical-services' },
   { label: 'Gallery', to: '/gallery' },
   { label: 'Contact Us', to: '/contacts-us' },
 ];
@@ -25,6 +26,7 @@ export const footerLinks = [
   { label: 'Injections', to: '/injections' },
   { label: 'Wellness Tests & Screening', to: '/wellness-tests-screening' },
   { label: 'Corporate Wellness', to: '/corporate-wellness' },
+  { label: 'Concierge Services', to: '/concierge-medical-services' },
   { label: 'Contact Us', to: '/contacts-us' },
 ];
 
@@ -163,10 +165,8 @@ export const whyInvest = [
 export const team = [
   { name: 'Frans Engelbrecht', role: 'Managing Director', image: '/images/team/frans-engelbrecht.png' },
   { name: 'Charnel Engelbrecht', role: 'Director', image: '/images/team/charnel-engelbrecht.png' },
-  { name: 'Nicolina Pieterse', role: 'Director', image: '/images/team/nicolina-pieterse.png' },
   { name: 'Angelique Wilsenach', role: 'Registered Nurse', image: '/images/team/angelique-wilsenach.png' },
   { name: 'Raesa Nxusa', role: 'Registered Nurse', image: '/images/team/raesa-nxusa.png' },
-  { name: 'Zanele Mathibela', role: 'Registered Nurse', image: '/images/team/zanele-mathibela.png' },
 ];
 
 export const ivDrips = [
@@ -177,31 +177,29 @@ export const ivDrips = [
   { name: 'Skin Lightening Drip', text: 'Even out skin tone and promote a brighter complexion over time.' },
   { name: 'Detox Drip', text: 'Flush out toxins and support liver function for better energy and clarity.' },
   { name: 'Weight Loss Drip', text: 'Boost metabolism, burn fat, and support your weight loss journey.' },
-  { name: 'Muscle Booster Drip', text: 'Support muscle recovery, growth, and strength after workouts.' },
-  { name: 'Vitamin Sunrise Drip', text: 'Kickstart your day with an energising vitamin blend.' },
   { name: 'Pain Buster Drip', text: 'Reduce inflammation and ease chronic pain naturally.' },
   { name: 'Flu Fighter Drip', text: 'Recover faster from flu symptoms and replenish lost nutrients.' },
   { name: 'Sport Endurance Drip', text: 'Enhance stamina, performance, and recovery for athletes.' },
   { name: 'Jet Fuel Drip', text: 'Supercharge your energy and mental focus when you need it most.' },
   { name: 'Libido Enhancer Drip', text: 'Boost circulation, vitality, and overall sexual wellness.' },
-  { name: "Myers' Cocktail Drip", text: 'A classic infusion of essential vitamins and minerals for overall health.' },
-  { name: 'Golden Oldie Drip', text: 'Support joint health, energy, and vitality as you age.' },
   { name: 'Sport Injury Drip', text: 'Speed up recovery and reduce inflammation after sports injuries.' },
   { name: 'Mood & Brain Booster Drip', text: 'Enhance mood, focus, and cognitive function naturally.' },
   { name: 'Big Boy IV Drip', text: 'Support healthy testosterone levels and boost energy and performance.' },
-  { name: 'Fertility Drip', text: 'Nourish your body with nutrients that support reproductive health.' },
-  { name: 'Co-Enzyme Q10 Drip', text: 'Support heart health, cellular energy, and antioxidant protection.' },
+  { name: 'Co-Enzyme Drip', text: 'Support heart health, cellular energy, and antioxidant protection.' },
   { name: 'B NAD Drip', text: 'Boost cellular repair, brain function, and overall energy levels.' },
   { name: 'Alpha Lipoic Acid Drip', text: 'Powerful antioxidant support for detox, skin, and nerve health.' },
   { name: 'Biotin Drip', text: 'Strengthen hair, skin, and nails from within.' },
   { name: 'Zinc Drip', text: 'Support immunity, skin health, and wound healing.' },
   { name: 'Iron Drip', text: 'Replenish iron levels to combat fatigue, improve energy, and support healthy blood function.' },
+  { name: 'Gout Relief Drip', text: 'Targeted relief from intense pain and inflammation of an acute gout flare-up.' },
+  { name: 'Liver Detox Drip', text: "Support the body's natural filtration system, neutralise toxins and promote cellular repair." },
+  { name: 'Gut Health Drip', text: 'Soothe gastrointestinal inflammation, repair the gut lining and optimise nutrient absorption.' },
 ];
 
 export const injections = [
   { name: 'B12 Injection', text: "Replenish your body's B12 stores to boost energy, improve focus, and support healthy nerve function." },
   { name: 'B Complex Injection', text: 'A blend of essential B vitamins to enhance mood, energy levels, and overall metabolic health.' },
-  { name: 'Mr Muscle Injection', text: 'Support strength, stamina, and vitality with professionally monitored testosterone therapy.' },
+  { name: 'Mr Muscle Injection (Testosterone)', text: 'Support strength, stamina, and vitality with professionally monitored testosterone therapy.' },
   { name: 'Weight Loss Injection', text: 'Kickstart your metabolism and support fat burning as part of your weight management plan.' },
   { name: 'Energy Bomb Injection', text: 'A quick, powerful pick-me-up packed with vitamins and nutrients to fight fatigue.' },
   { name: 'Neurobion Injection', text: 'Nourish your nerves and muscles with a high-dose blend of B vitamins for optimal nerve health.' },
@@ -241,37 +239,18 @@ export const corporateOfferings = [
 ];
 
 export const weightManagementOfferings = [
-  {
-    title: 'GLP-1 Weight Management',
-    text: 'Our GLP-1 programme is designed for clients who are looking for a medically supervised weight management solution.',
-  },
-  {
-    title: 'Weight Loss IV Drip',
-    text: 'Our Weight Loss IV Drip is designed to support your wellness routine with targeted nutrients that may help with energy, hydration, and overall wellness while you work toward your goals.',
-  },
-  {
-    title: 'Weight Loss Injections',
-    text: 'Our Weight Loss Injections offer another targeted option for clients looking for support on their weight management journey.',
-  },
-  {
-    title: 'Optional Lipolysis Add-On',
-    text: 'For clients looking for extra body contouring support, we also offer an optional Lipolysis add-on.',
-  },
+  { title: 'GLP-1 Medications', text: 'Advanced clinical options to help manage appetite and metabolic health.' },
+  { title: 'Weight Loss IV Drips', text: 'Premium nutrient infusions formulated to boost metabolism and energy.' },
+  { title: 'Weight Loss Injections', text: 'Targeted treatments designed to support fat burning and wellness.' },
+  { title: 'Supportive Care', text: 'Continuous professional guidance to keep you motivated and on track.' },
 ];
 
+// Vaal photos removed – awaiting updated photos from the client.
 export const galleryPhotos = {
-  vaal: [
-    '/images/gallery/vaal-1.jpeg',
-    '/images/gallery/vaal-2.webp',
-    '/images/gallery/vaal-3.webp',
-    '/images/gallery/vaal-4.webp',
-    '/images/gallery/vaal-5.jpeg',
-    '/images/gallery/vaal-6.jpeg',
-  ],
+  vaal: [] as string[],
   sandton: [
     '/images/gallery/sandton-1.jpeg',
     '/images/gallery/sandton-2.webp',
-    '/images/gallery/sandton-3.webp',
     '/images/gallery/sandton-4.webp',
     '/images/gallery/sandton-5.jpeg',
     '/images/gallery/sandton-6.jpeg',

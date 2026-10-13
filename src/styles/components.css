@@ -503,6 +503,43 @@
   object-fit: cover;
 }
 
+.two-col--reverse > :first-child {
+  order: 2;
+}
+
+/* Image + text intro on service pages */
+.intro-split__media img {
+  box-shadow: 0 40px 70px -40px rgba(51, 49, 51, 0.4);
+}
+
+.intro-split__body h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+}
+
+.intro-split__body strong {
+  color: var(--color-secondary);
+}
+
+.intro-split__body .why-choose-list {
+  margin-bottom: 24px;
+}
+
+.intro-split__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.intro-split__steps h3 {
+  margin-top: 10px;
+}
+
+.intro-split__body > h3 {
+  font-size: 1.15rem;
+  margin-top: 28px;
+}
+
 .why-choose-list {
   display: flex;
   flex-direction: column;
@@ -556,6 +593,9 @@
   }
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .two-col--reverse > :first-child {
+    order: 0;
   }
   .two-col,
   .branch-finder__grid,
